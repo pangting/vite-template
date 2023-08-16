@@ -34,7 +34,7 @@ npm run build
 npm run lint
 ```
 ### 项目架构
-vue3 + pinia + elment-plus + axios
+vue3 + pinia + vite + elment-plus + axios
 ### node 版本
 因为vite版本，所以要求v14.18+
 
