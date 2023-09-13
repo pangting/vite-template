@@ -13,7 +13,6 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'no-unused-vars': OFF, // 禁止出现未使用过的变量，eslint:recommended默认开启
     // import配置
     'import/no-unresolved': OFF, // import/recommended默认开启，确保导入指向可以解析的文件/模块
 
@@ -22,7 +21,7 @@ module.exports = {
 
     // eslint配置
     'indent': OFF, // 缩进：2个空格,Switch语句按1倍缩进执行
-    'quotes': [ ERROR, 'single' ],
+    'quotes': [ ERROR, 'single' ], // 使用单引号
     'semi': [ ERROR, 'never' ], // 行末尾分号：不要分号
     'semi-spacing': [ ERROR, { before: false, after: true } ], // 分号前后空格：前不要后要
     'no-trailing-spaces': ERROR, // 禁用行尾空白
@@ -52,7 +51,11 @@ module.exports = {
     'space-before-function-paren': [ ERROR, 'always' ], // 函数定义时括号前面要不要有空格
     'arrow-spacing': ERROR, // =>的前/后空格
     'space-before-blocks': [ ERROR, 'always' ], // 不以新行开始的块{前面要不要有空格
+    'no-var': ERROR, // 要求使用let或const而不是var
+    'prefer-const': ERROR, // 建议使用const，而不是let
     'no-const-assign': ERROR, // 禁止修改const声明的变量
+    'no-new-object': ERROR, // 禁止使用new Object()
+    'no-unused-vars': OFF, // 禁止出现未使用过的变量，eslint:recommended默认开启
     'space-infix-ops': ERROR, // 要求操作符周围有空格,如：a + b
     'template-curly-spacing': [ ERROR, 'always' ], // 要求或禁止模板字符串中的嵌入表达式周围空格的使用
   }
