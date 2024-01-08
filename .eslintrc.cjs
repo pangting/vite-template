@@ -18,6 +18,7 @@ module.exports = {
 
     // vue配置
     'vue/no-v-model-argument': OFF, // 不允许v-model在自定义组件中添加参数，如：v-model:loading
+    'vue/multi-word-component-names': 0, // 多字符组件名称，不设置检测
 
     // eslint配置
     'indent': OFF, // 缩进：2个空格,Switch语句按1倍缩进执行
